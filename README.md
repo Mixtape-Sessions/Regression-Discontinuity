@@ -7,11 +7,11 @@ This course covers methods for the analysis and interpretation of the Regression
 
 ## Schedule
 
-<details open><summary><b>Day 1</b></summary><br/>
+<details open><summary><b>Sharp RD Design</b></summary><br/>
 
 <b>Topics</b>
 
-- Sharp RD design: introduction and graphical illustration with RD plots
+- Introduction to Sharp RD and graphical illustration with RD plots
 
 - Continuity based RD analysis  
 
@@ -29,11 +29,9 @@ This course covers methods for the analysis and interpretation of the Regression
 
 </details><br />
 
-<details open><summary><b>Day 2</b></summary><br/>
+<details open><summary><b>Inference with Sharp RD Design</b></summary><br/>
 
 <b>Topics</b>
-
-- Continuity based RD analysis, continued
 
 - Robust confidence intervals based on local polynomials
 
@@ -55,11 +53,26 @@ This course covers methods for the analysis and interpretation of the Regression
 
 </details><br />
 
-<details open><summary><b>Day 3</b></summary><br/>
+<details open><summary><b>RD Falsification Tests</b></summary><br/>
 
 <b>Topics</b>
 
 - Falsification of RD assumptions: density and covariate balance tests
+
+<b>Slides</b>
+
+
+
+<b>Readings</b>
+
+
+
+</details><br />
+
+
+<details open><summary><b>Fuzzy RD Design</b></summary><br/>
+
+<b>Topics</b>
 
 - Imperfect compliance: The Fuzzy RD design
 
@@ -72,3 +85,4 @@ This course covers methods for the analysis and interpretation of the Regression
 
 
 </details><br />
+
