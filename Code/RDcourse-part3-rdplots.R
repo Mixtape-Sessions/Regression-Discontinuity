@@ -27,16 +27,18 @@ Y = data$mort_age59_related_postHS
 X = data$povrate60 - 59.1984
 T = (X>=0)
 
+dim(data)
 summary(data)
 length(X)
 length(unique(X))
 length(Y)
 length(unique(Y))
 
-
 # Figure 3.1, Scatter plot
 plot(X, Y, xlab = "Running Variable", ylab = "Outcome", col=1, pch=20)
 abline(v=0)
+
+out = rdplot(Y, X, binselect = 'qsmv', p=3)
 
 # Figure 3.2, RD Plot Using 40 Bins of Equal Length
 out = rdplot(Y, X, nbins = c(20,20), binselect = 'esmv')
@@ -60,3 +62,23 @@ out = rdplot(Y, X,  binselect = 'esmv')
 out = rdplot(Y, X,  binselect = 'qsmv')
 
 out = rdplot(Y, X,  binselect = 'qsmv', kernel = 'uniform', support = c(-150,150))
+
+
+################################################################################
+## US Senate data
+################################################################################
+data = read.dta13("senate.dta")
+names(data)
+
+X = data$demmv
+Y = data$demvoteshfor2
+
+# Create "Democratic Win at t"
+Z = rep(NA, length(X))
+Z[X<0  & !is.na(X)]=0
+Z[X>=0 & !is.na(X)]=1
+
+plot(X, Y, xlab = "Running Variable", ylab = "Outcome", col=1, pch=20)
+abline(v=0)
+
+out = rdplot(Y, X, binselect = 'qsmv', p=3)

@@ -21,6 +21,7 @@ library(rddensity)
 library(rdrobust)
 library(rdlocrand)
 library(readstata13)
+library(ggplot2)
 
 data = read.dta13("headstart.dta")
 names(data)

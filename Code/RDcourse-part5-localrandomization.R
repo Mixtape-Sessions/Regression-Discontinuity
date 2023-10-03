@@ -22,7 +22,6 @@ library(rdrobust)
 library(rdlocrand)
 library(readstata13)
 
-
 ################################################################################
 ## US Senate data
 ################################################################################
@@ -40,7 +39,7 @@ Z[X>=0 & !is.na(X)]=1
 #*--------------------------------------------*
 #  * Local Randomization RD Approach *
 #  *--------------------------------------------*
-rdrandinf(Y, X, wl=-0.75, wr=0.75, seed=50) 
+rdrandinf(Y, X, wl=-0.7652, wr=0.7652, seed=50, ci=TRUE) 
 
 #Using rdrandinf in the Ad-hoc Window with the Bernoulli Option
 bernpr=rep(NA, length(X))
@@ -55,7 +54,7 @@ rdrandinf(Y,  X, wl=-0.75, wr=0.75, seed=50, ci = c(0.05, seq(from=-10, to=10, b
 
 # Code snippet 5, Using rdwinselect with the wobs Option
 covs = cbind(data$presdemvoteshlag1, data$demvoteshlag1, data$demvoteshlag2, data$demwinprv1, data$demwinprv2, data$dmidterm, data$dpresdem, data$dopen)
-rdwinselect(X, covs, seed = 50, wobs=2) 
+rdwinselect(X, c = 0 , covs, seed = 50, wobs=2, nwindows=200 , approx=TRUE, plot=TRUE)
 
 # Code snippet 6, Using rdwinselect with the wobs, nwindows and plot Options
 rdwinselect(X, covs, seed = 50, wobs=2, nwindows =50, plot=TRUE) 

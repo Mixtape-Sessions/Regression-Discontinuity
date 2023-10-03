@@ -55,7 +55,7 @@ dim(data)
 # Create variables
 X = data$running_sisben
 D = data$beneficiary_spp
-Y1 = data$ spadies_any
+Y1 = data$spadies_any
 Y2 = data$spadies_hq
 
 # First Stage: T on D

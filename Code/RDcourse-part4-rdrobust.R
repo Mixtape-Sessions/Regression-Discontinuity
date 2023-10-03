@@ -22,18 +22,16 @@ library(rdrobust)
 library(rdlocrand)
 library(readstata13)
 
+#######################################################
+#
+# Head Start
+#
+########################################################
 data = read.dta13("headstart.dta")
 Y = data$mort_age59_related_postHS 
 X = data$povrate60 - 59.1984
-c = 59.1984
-Xraw = data$povrate60
 T = (X>=0)
 
-summary(data)
-length(X)
-length(unique(X))
-length(Y)
-length(unique(Y))
 
 #-----------------------------------------#
 # Local polynomial analysis (Continuity-Based RD Approach)
@@ -58,13 +56,13 @@ w = NA
 w = 1-abs(X)/10
 
 # Code snippet 4 (regression with weights)
-rdrobust(Y, X, h = 10)
+summary(rdrobust(Y, X, h = 10, kernel = "uniform"))
 
 out = lm(Y~X+T+T_X, weight=w, subset=abs(X)<=10)
 print(out)
 
 # Code snippet 5 (using rdrobust with uniform weights)
-rdrobust(Y, X, kernel = 'uniform',  p = 1, h = 10)
+summary(rdrobust(Y, X, kernel = 'uniform',  p = 1, h = 10))
 
 # Code snippet 6 (using rdrobust with triangular weights)
 rdrobust(Y, X, kernel = 'triangular',  p = 1, h = 10)
@@ -101,8 +99,9 @@ rdrobust(Y, X, kernel = 'triangular',  p = 1, bwselect = 'mserd')
 # Code snippet 15 (using rdrobust default options and showing all the output)
 rdrobust(Y, X, kernel = 'triangular',  p = 1, bwselect = 'mserd', all = TRUE)
 
+
 #############################################################
-## Additional Empirical Analysis
+## Head Start Data: Additional Empirical Analysis
 #############################################################
 # 1960 Census covariates
 X60 = cbind(data$census1960_pop,
@@ -178,3 +177,35 @@ ILch <- ((rd$ci[3,2] - rd$ci[3,1])/IL - 1)* 100
 rd <- rdrobust(y, x, c=59.1968, covs=z)
 ILch <- ((rd$ci[3,2] - rd$ci[3,1])/IL - 1)* 100
 
+
+#######################################################
+#
+# US Senate application
+#
+########################################################
+data = read.dta13("senate.dta")
+names(data)
+
+X = data$demmv
+Y = data$demvoteshfor2
+
+# Create "Democratic Win at t"
+Z = rep(NA, length(X))
+Z[X<0  & !is.na(X)]=0
+Z[X>=0 & !is.na(X)]=1
+
+summary(data)
+length(X)
+length(unique(X))
+length(Y)
+length(unique(Y))
+
+rdplot(Y,X)
+
+rdplot(Y,X, binselect="qsmv", p=4)
+
+# Using rdrobust with uniform weights
+out = rdrobust(Y, X, kernel = 'uniform',  p = 1, h = 17 , all=TRUE)
+summary(out)
+names(out)
+out$coef
