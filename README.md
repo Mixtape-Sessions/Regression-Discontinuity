@@ -1,5 +1,5 @@
-<img src="img/banner.png" alt="Mixtape Sessions Banner" width="100%"> 
-<br/>
+<img src="https://raw.githubusercontent.com/Mixtape-Sessions/Regression-Discontinuity/main/img/banner.png" alt="Mixtape Sessions Banner" width="100%"> 
+
 
 ## About
 
@@ -24,7 +24,7 @@ Introduction to Sharp RD design and graphical illustration. Continuity based fra
 - Estimation of RD effects with local polynomials.
 - Optimal bandwidth selection.
 
-*Assigned Reading:* 
+#### Readings
 [Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapters 1, 2, 3, and Sections 4.1 and 4.2 in Chapter 4.
 
 ### Day 2
@@ -38,7 +38,7 @@ Continuity based framework, continued: robust inference based on local polynomia
   – Window selection based on covariates
   – Inferences based on large-sample methods
 
-*Assigned Readings:*
+#### Readings
 [Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 4. [Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 2.
 
 ### Day 3
@@ -47,7 +47,8 @@ RD local randomization analysis, RD falsification methods, and extensions to can
 - Falsification of RD assumptions: density and covariate balance tests
 - The RD design under imperfect compliance
 
-*Assigned Readings:*
+#### Readings
+
 [Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 5; [Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 3.
 
 
@@ -69,13 +70,13 @@ RD local randomization analysis, RD falsification methods, and extensions to can
 
 ### Readings
 
-*Essential:*
+#### Essential
 
 [Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf)
 
 [Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf)
 
-*Background:*
+#### Background
 
 [Cattaneo, Frandsen, and Titiunik (2015)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoFrandsenTitiunik2015-JCI.pdf)
 
@@ -85,7 +86,7 @@ RD local randomization analysis, RD falsification methods, and extensions to can
 
 [Lee and Lemieux (2010)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/LeeLemieux2010-JEL.pdf)
 
-*Coding Labs*:
+#### Coding Labs
 
 [Caughey and Sekhon (2011)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CaugheySekhon2011-PA.pdf)
 
@@ -127,7 +128,7 @@ instructions below:
 
 If you are using Stata, you will have to obtain a license from [here](https://www.stata.com/). Stata is licensed through [StataCorp](http://www.stata.com/) and is frequently offered at a significant discount through academic institutions to their employees and students. Seminar participants who are not yet ready to purchase Stata could take advantage of StataCorp’s 30-day software return policy and obtain the latest version of Stata on a trial basis in the weeks immediately preceding this course. Use this link for 30-day trial copy: http://www.stata.com/customer-service/evaluate-stata/
 
-</details>
+
 
 <details closed><summary>Package installation instructions</summary>
 
