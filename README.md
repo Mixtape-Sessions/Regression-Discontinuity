@@ -5,7 +5,6 @@
 
 This course covers methods for the analysis and interpretation of the Regression Discontinuity (RD) design, a non-experimental strategy to study treatment effects that can be used when units receive a treatment based on a score and a cutoff. The course covers methods for estimation, inference, and falsification of RD treatment effects using two different approaches: the continuity-based framework, implemented with local polynomials, and the local randomization framework, implemented with standard tools from the analysis of experiments. The focus is on conceptual understanding of the underlying methodological issues and effective empirical implementation. Every topic is illustrated with the analysis of RD examples using real-world data, walking through R and Stata codes that fully implement all the methods discussed. At the end of the course, participants will have acquired the necessary skills to rigorously interpret, visualize, validate, estimate, and characterize the uncertainty of RD treatment effects.
 
-
 ## Overview 
 
 The goal of this workshop is to give an introduction to standard and recent methodological developments in the analysis and interpretation of regression discontinuity (RD) designs. The course focuses on methodology and empirical practice, as well as on conceptual issues, but not on the technical details of the statistical and econometric theory underlying the results. A brief
@@ -25,7 +24,7 @@ Introduction to Sharp RD design and graphical illustration. Continuity based fra
 - Optimal bandwidth selection.
 
 #### Readings
-[Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapters 1, 2, 3, and Sections 4.1 and 4.2 in Chapter 4.
+[Cattaneo, Idrobo, and Titiunik (2020)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapters 1, 2, 3, and Sections 4.1 and 4.2 in Chapter 4.
 
 ### Day 2
 
@@ -39,9 +38,13 @@ Continuity based framework, continued: robust inference based on local polynomia
   – Inferences based on large-sample methods
 
 #### Readings
-[Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 4. [Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 2.
+
+[Cattaneo, Idrobo, and Titiunik (2020)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 4
+
+[Cattaneo, Idrobo, and Titiunik (2023)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 2
 
 ### Day 3
+
 RD local randomization analysis, RD falsification methods, and extensions to canonical RD design.
 
 - Falsification of RD assumptions: density and covariate balance tests
@@ -49,51 +52,50 @@ RD local randomization analysis, RD falsification methods, and extensions to can
 
 #### Readings
 
-[Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 5; [Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 3.
+[Cattaneo, Idrobo, and Titiunik (2020)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf), Chapter 5
+
+[Cattaneo, Idrobo, and Titiunik (2023)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf), Chapter 3
 
 
 
-### Slides
+## Slides
 
-[RD Slides](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Slides/RD.pdf)
+[RD Slides](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Slides/RD.pdf)
 
 
-### Coding Exercises
+## Coding Exercises
 
 [Exercise 1: Meyersson (2014)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/tree/main/Labs/Exercise-1/) 
 
+- Paper: [Meyersson (2014)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/Meyersson2014-ECTA.pdf)
+
 [Exercise 2: Caughey and Sekhon (2011)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/tree/main/Labs/Exercise-2/) 
+
+- Paper: [Caughey and Sekhon (2011)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CaugheySekhon2011-PA.pdf)
 
 [Additonal code for all covered material](https://github.com/Mixtape-Sessions/Regression-Discontinuity/tree/main/Code/)
 
 
+## Readings
 
-### Readings
+### Essential
 
-#### Essential
+[Cattaneo, Idrobo, and Titiunik (2020)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf)
 
-[Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf)
+[Cattaneo, Idrobo, and Titiunik (2023)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf)
 
-[Cattaneo, Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf)
+### Background
 
-#### Background
+[Cattaneo, Frandsen, and Titiunik (2015)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoFrandsenTitiunik2015-JCI.pdf)
 
-[Cattaneo, Frandsen, and Titiunik (2015)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoFrandsenTitiunik2015-JCI.pdf)
+[Cattaneo and Titiunik (2022)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoTitiunik2022-ARE.pdf)
 
-[Cattaneo and Titiunik (2022)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoTitiunik2022-ARE.pdf)
+[Imbens and Lemieux (2008)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/ImbensLemieux2008-JoE.pdf)
 
-[Imbens and Lemieux (2008)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/ImbensLemieux2008-JoE.pdf)
-
-[Lee and Lemieux (2010)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/LeeLemieux2010-JEL.pdf)
-
-#### Coding Labs
-
-[Caughey and Sekhon (2011)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CaugheySekhon2011-PA.pdf)
-
-[Meyersson (2014)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/Meyersson2014-ECTA.pdf)
+[Lee and Lemieux (2010)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/LeeLemieux2010-JEL.pdf)
 
 
-### Computing and Software 
+## Computing and Software 
 
 To participate in the hands-on exercises, you are strongly encouraged to secure access to a computer with the most recent version of `Stata` or `R` plus `RStudio` installed.
 
@@ -113,7 +115,7 @@ The workshop will employ several empirical illustrations, which will be analyzed
 
 Further details, including how to install the packages in both R and Stata may be found at: https://rdpackages.github.io
 
-Replication files in both `R` and `Stata` for all the empirical analyses in [Cattaneo, Idrobo, and Titiunik (2020)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf) and [Idrobo, and Titiunik (2023)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf) may be found at: https://github.com/rdpackages-replication/CIT_2020_CUP
+Replication files in both `R` and `Stata` for all the empirical analyses in [Cattaneo, Idrobo, and Titiunik (2020)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2020-CUP-Foundations-preprint.pdf) and [Idrobo, and Titiunik (2023)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CattaneoIdroboTitiunik2023-CUP-Extensions.pdf) may be found at: https://github.com/rdpackages-replication/CIT_2020_CUP
 
 Please make sure you have `Stata` or `R` and the above modules/commands installed and fully functional in your personal computer before the course begins. Datasets, do-files and `R` files will be provided in advance.
 
@@ -128,6 +130,7 @@ instructions below:
 
 If you are using Stata, you will have to obtain a license from [here](https://www.stata.com/). Stata is licensed through [StataCorp](http://www.stata.com/) and is frequently offered at a significant discount through academic institutions to their employees and students. Seminar participants who are not yet ready to purchase Stata could take advantage of StataCorp’s 30-day software return policy and obtain the latest version of Stata on a trial basis in the weeks immediately preceding this course. Use this link for 30-day trial copy: http://www.stata.com/customer-service/evaluate-stata/
 
+</details>
 
 
 <details closed><summary>Package installation instructions</summary>
@@ -152,6 +155,7 @@ net install rdpower, from(https://raw.githubusercontent.com/rdpackages/rdpower/m
 net install rdmulti, from(https://raw.githubusercontent.com/rdpackages/rdmulti/master/stata) replace
 ```
 
+</details>
 
 
 

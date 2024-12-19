@@ -1,7 +1,7 @@
 
 # Exercise 2: Caughey and Sekhon Application
 
-In this exercise, you will re-analyze the data in [Caughey and Sekhon (2011)](https://github.com/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CaugheySekhon2011-PA.pdf). The data is in the file `CaugheySekhon2011.dta` (Stata format) and `CaugheySekhon2011.csv` (comma separated values format). 
+In this exercise, you will re-analyze the data in [Caughey and Sekhon (2011)](https://nbviewer.org/github/Mixtape-Sessions/Regression-Discontinuity/raw/main/Readings/CaugheySekhon2011-PA.pdf). The data is in the file `CaugheySekhon2011.dta` (Stata format) and `CaugheySekhon2011.csv` (comma separated values format). 
 
 The authors are interested in estimating the incumbency advantage at the party level. To study this question, they use an RD design focused exclusively on U.S. House elections. Specifically, the unit of analysis is the U.S. congressional district, and the score (variable `DifDPct` in the dataset) is the margin of victory of the Democratic party—defined as the difference between the vote share obtained by the Democratic party and the vote share obtained by the Democratic party’s strongest opponent. The main outcome of interest (variable `DWinNxt` in the dataset) is the Democratic party’s victory in the following election.
 
